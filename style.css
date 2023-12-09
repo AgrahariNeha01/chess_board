@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  gap: 1px;
+  height: 90vh; 
+}
+
+.white-cell,
+.black-cell {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.white-cell {
+  background-color: white;
+}
+
+.black-cell {
+  background-color: black;
+  color: white;
+}
+
+.pointer {
+  margin-top: 10px;
+  font-size: 16px;
+  color: red;
+}
+
+.highlight {
+  background-color:red;
+  color: black;
+}
+.dice{
+  background-color: green;
+  width: 70px;
+  height: 40px;
+}
+.reset{
+  background-color: yellow;
+  height: 40px;
+  width: 70px;
+}
